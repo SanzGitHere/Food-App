@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_background">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/li_qua"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="40dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/qua_lay"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_foRateRest">
+
+        <TextView
+            android:id="@+id/lbl_fViewRest"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/check_button"
+            android:gravity="center"
+            android:text="View"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_foImg2"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:background="@drawable/rounded_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CustomShapeAppearance2"
+        app:srcCompat="@drawable/fast_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_foNameRest"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Pizza"
+        app:layout_constraintStart_toEndOf="@+id/img_foImg2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_fTimeRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/time"
+        android:text="   25 - 30 min"
+        android:textColor="@color/dark_red"
+        app:layout_constraintStart_toEndOf="@+id/img_foImg2"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_foNameRest" />
+
+    <TextView
+        android:id="@+id/lbl_foRateRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:drawableEnd="@drawable/star"
+        android:text="5    "
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_foNameRest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbl_foNameRest"
+        tools:textColor="@color/pure_red" />
+
+    <TextView
+        android:id="@+id/lbl_foPrice2Rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 $"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/li_qua"
+        app:layout_constraintStart_toEndOf="@+id/img_foImg2"
+        app:layout_constraintTop_toTopOf="@+id/li_qua"
+        tools:textColor="@color/pure_red" />
+
+    <TextView
+        android:id="@+id/lbl_fRestFId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_fRestId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_fRestFId2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

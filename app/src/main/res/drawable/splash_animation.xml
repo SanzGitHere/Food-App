@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:drawable="@drawable/dine">
+
+        <target
+            android:name="your_logo"
+            android:animation="@animator/your_animation" />
+    </animated-vector>
