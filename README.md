@@ -1,6 +1,5 @@
 # 🍔 Food App – Mobile Food Delivery Management System
 
-A mobile application developed as part of the Mobile Application Development coursework at the National Institute of Business Management (NIBM). 
 This app provides a seamless platform for food ordering, management, and delivery, tailored for both administrators and registered users.
 
 ## 📱 Features : 
